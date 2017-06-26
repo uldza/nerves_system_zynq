@@ -44,11 +44,11 @@ fi
 # the boot device. In uboot, mmc 0 is the SDCard and mmc 1 is the eMMC.
 # Therefore, we hardcode root=/dev/mmcblk0p2 since we always want to mount
 # the root partition off the same device that ran u-boot and supplied
-# zImage.
+# uImage.
 setenv bootargs console=${console} ${optargs} root=/dev/mmcblk0p2 rootfstype=squashfs ro rootwait
 
 # Load the kernel
-load mmc ${mmcdev}:1 ${loadaddr} zImage
+load mmc ${mmcdev}:1 ${loadaddr} uImage
 
 # Load the DT. On the BBB, fdtfile=am335x-boneblack.dtb
 load mmc ${mmcdev}:1 ${fdtaddr} ${fdtfile}
