@@ -11,9 +11,9 @@ config pkg, :nerves_env,
   type: :system,
   version: version,
   compiler: :nerves_package,
-  #artifact_url: [
-  #  "https://github.com/nerves-project/#{pkg}/releases/download/v#{version}/#{pkg}-v#{version}.tar.gz",
-  #],
+  artifact_url: [
+    "https://github.com/uldza/nerves_system_zynq/raw/master/nerves_system_zynq.tar.gz"
+  ],
   platform: Nerves.System.BR,
   platform_config: [
     defconfig: "nerves_defconfig",
