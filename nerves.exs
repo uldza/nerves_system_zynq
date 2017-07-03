@@ -26,5 +26,6 @@ config pkg, :nerves_env,
     "nerves.exs",
     "uboot-script.cmd",
     "post-createfs.sh",
+    "board",
     "VERSION"
   ]
